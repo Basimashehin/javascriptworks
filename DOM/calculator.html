@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <input type="text" placeholder="Number one" id="id_num1">
+                <input type="text" placeholder="Number two" id="id_num2">
+                <button onclick="addNumbers()">Add</button>
+            </div>
+            <div class="col-4" id="result"></div>
+        </div>
+    </div>
+</body>
+<script>
+    function addNumbers(){
+        let n1=document.querySelector("#id_num1").value
+        let n2=document.querySelector("#id_num2").value
+        let sum=Number(n1)+Number(n2)
+        document.querySelector("#result").innerHTML=`result=${sum}`
+    }
+</script>
+</html>
